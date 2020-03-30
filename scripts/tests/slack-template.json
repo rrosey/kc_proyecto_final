@@ -1,0 +1,84 @@
+[
+  { "type": "section", "text": { "type": "mrkdwn", "text": "Hola, Las recomendaciones de las casas de **Airbnb** con mejor oferta de ocio son:" } },
+  { "type": "divider" },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Cozy & bright flat in Plaza Chueca!*\\n:star::star::star::star: https://www.airbnb.com/rooms/6462525 reviews\n Great little studio right on Plaza Chueca with the metro just a few steps from the front door. Walki.."
+    },
+    "accesory": { "type": "image", "image_url": "https://a0.muscache.com/im/pictures/82279313/574ebe3f_original.jpg?aki_policy=small", "alt_text": "Sin imagen" }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Augusto Figueroa, Chueca, 2 Dormitorios Deluxe*\\n:star::star::star::star: https://www.airbnb.com/rooms/11198586 reviews\n Ubicado en el centro de Madrid cerca de las calles Gran V\u00eda y Fuencarral. A 100 metros de la estaci\u00f3.."
+    },
+    "accesory": { "type": "image", "image_url": "https://a0.muscache.com/im/pictures/42e05485-958f-433b-9090-d7f2503a9b2e.jpg?aki_policy=small", "alt_text": "Sin imagen" }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Acogedor estudio en Chueca - Madrid*\\n:star::star::star::star: https://www.airbnb.com/rooms/13228889 reviews\n Hermoso y c\u00f3modo apartamento en el coraz\u00f3n de Chueca, centro de Madrid. Peque\u00f1o estudio en un bajo c.."
+    },
+    "accesory": { "type": "image", "image_url": "https://a0.muscache.com/im/pictures/4bea459c-b1ba-461f-b66b-9181def5143b.jpg?aki_policy=small", "alt_text": "Sin imagen" }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*APARTAMENTO CHUECA-GRAN VIA*\\n:star::star::star::star: https://www.airbnb.com/rooms/17470093 reviews\n Es un comodo sitio para estar dias de turismo ocio en madrid, ubicado en el barrio de chueca con gra.."
+    },
+    "accesory": { "type": "image", "image_url": "https://a0.muscache.com/im/pictures/30e9a81b-f523-44c6-94a3-fe104a36d7f5.jpg?aki_policy=small", "alt_text": "Sin imagen" }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Chueca - La Libertad*\\n:star::star::star::star: https://www.airbnb.com/rooms/12350839 reviews\n Unique apartment in vibrant neighborhoods, carefully selected by expert to make sure you like them a.."
+    },
+    "accesory": { "type": "image", "image_url": "https://a0.muscache.com/im/pictures/b4e08b69-27fa-4296-949c-8e563459347c.jpg?aki_policy=small", "alt_text": "Sin imagen" }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*2 bedrm-2Bathrm - Perfect Location-Madrid -Center*\\n:star::star::star::star: https://www.airbnb.com/rooms/5371564 reviews\n This spacious, bright and unusual apartment located on the third floor of a building located in Plaz.."
+    },
+    "accesory": { "type": "image", "image_url": "https://a0.muscache.com/im/pictures/73775515/c8bb46d8_original.jpg?aki_policy=small", "alt_text": "Sin imagen" }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*COZY APARTMENT CHUECA*\\n:star::star::star::star: https://www.airbnb.com/rooms/17374582 reviews\n Mi alojamiento es bueno para parejas, aventureros, y viajeros de negocios. Cozy apartment in a great.."
+    },
+    "accesory": { "type": "image", "image_url": "https://a0.muscache.com/im/pictures/56d08d91-dcee-4c01-9f09-8ccf332b43ee.jpg?aki_policy=small", "alt_text": "Sin imagen" }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*CHUECA PEACEFUL AND NICE*\\n:star::star::star::star: https://www.airbnb.com/rooms/15312020 reviews\n Bed sheets as well. Two rooms. A big living room with tv, wifi and a lunch table for 6 people, no el.."
+    },
+    "accesory": { "type": "image", "image_url": "https://a0.muscache.com/im/pictures/379244e4-14f5-4819-8912-62c749d535b4.jpg?aki_policy=small", "alt_text": "Sin imagen" }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Habitaci\u00f3n con Balconcito Chueca*\\n:star::star::star::star: https://www.airbnb.com/rooms/13710925 reviews\n Habitaci\u00f3n  con balc\u00f3n. En pleno barrio de Chueca, a una calle de la misma plaza.  Piso con much\u00edsim.."
+    },
+    "accesory": { "type": "image", "image_url": "https://a0.muscache.com/im/pictures/426f9e6f-4bfe-40b1-8fc0-7be93b004094.jpg?aki_policy=small", "alt_text": "Sin imagen" }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Piso de 160m en centro de Madrid*\\n:star::star::star::star: https://www.airbnb.com/rooms/10173506 reviews\n Finca cl\u00e1sica de 1870 en perfecto estado en el centro de Madrid. Piso completamente amueblado con 4 .."
+    },
+    "accesory": { "type": "image", "image_url": "https://a0.muscache.com/im/pictures/447666c1-ca9d-4a56-b807-56c81f36c2f0.jpg?aki_policy=small", "alt_text": "Sin imagen" }
+  }
+]
