@@ -8,7 +8,7 @@
 * [Flujo de trabajo](#flujo-de-trabajo)
 * [Desarrollo](#desarrollo)
 * [Deployment](#deployment)
-* [Mejoras y próximos pasos](#mejoras-y-pr-ximos-pasos)
+* [Mejoras fase I](#mejoras-fase-I)
 * [Fase II (Evolución)](#fase-ii--evoluci-n-)
 * [Referencias](#referencias)
 
@@ -151,7 +151,7 @@ Para poder utilizar la API de Foursquare de una manera mas eficiente, se ha opta
 5.	Espera a la finalización del job de Hive.
 Imagen con los Jobs ejecutados mediante el servicio Dataproc:
 
-![](images/ hive-jobs.png)
+![](images/hive-jobs.png)
 
 6.	Enviar los resultados mediante la plataforma Slack. Mediante el uso de templates y bloques proporcionados por la API de Slack se pueden generar mensajes con diseños más atractivos e incluso permitiendo interacción del usuario. A continuación, se muestra un ejemplo del layout generado con este script.
 
@@ -160,7 +160,7 @@ Imagen con los Jobs ejecutados mediante el servicio Dataproc:
 7.	Una vez terminado el analisis, el cluster será eliminado para no incurrir en gastos adicionales.
 
 #### Hive sql
-Se han generado dos scripts para procesar, mediante Hive, las recomendaciones de Airbnb. Estos scripts se pueden visualizar en el directorio _scripts/sql/_ del respositorio.
+Se han generado dos scripts para procesar, mediante Hive, las recomendaciones de Airbnb. Estos scripts se pueden visualizar en el directorio **_scripts/sql/_** del respositorio.
 
 -	**load_data.sql**: carga los csv en tablas para facilitar su procesamiento. También lleva a cabo alguna tarea de limpieza. 
 Para la carga de los datos se ha utilizado la propiedad   SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde', ya que puede escapar los separadores que se encuentran dentro de comillas dobles.
@@ -211,12 +211,12 @@ A continuación, se muestra las cloud functions desplegadas en el proyecto de GC
 ### Cloud Scheduler
 Se desplegarán 4 programadores, encargados de llamar a las cloud functions anteriores a la hora programada. Este despliegue se ha ejecutado mediante comandos _gcloud_.
 
-'''bash
+```bash
 gcloud scheduler jobs create http get-airbnb --schedule "0 0 * * 1" --time-zone "Europe/Madrid" --uri "https://europe-west1-big-data-keepcoding.cloudfunctions.net/get-airbnb" --http-method POST
 gcloud scheduler jobs create http get-events --schedule "0 0 * * *" --time-zone "Europe/Madrid" --uri "https://europe-west1-big-data-keepcoding.cloudfunctions.net/get-events" --http-method POST
 gcloud scheduler jobs create http get-poi --schedule "0 0 * * *" --time-zone "Europe/Madrid" --uri "https://europe-west1-big-data-keepcoding.cloudfunctions.net/get-poi" --http-method POST
 gcloud scheduler jobs create http compute-recommendations --schedule "1 0 * * *" --time-zone "Europe/Madrid" --uri "https://europe-west1-big-data-keepcoding.cloudfunctions.net/compute-recommendations" --http-method POST
-'''
+```
 
 La programación configurada es:
 | job | cron| descripción |
