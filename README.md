@@ -135,7 +135,7 @@ En este apartado se detallan los scripts desarrollados para implementar el proye
 
 ### Scripts 
 #### Datasets
-Los programas desarrollados para la extracción de los dataset se encuentran disponibles en el directorio _scripts_ de este repositorio.
+Los programas desarrollados para la extracción de los dataset se encuentran disponibles en el directorio **_scripts/_** de este repositorio.
 -	**get_airbnb_data.py**: Funciones python para la descarga del dataset de Airbnb y preprocesado del csv. Se eliminan los caracteres de ‘new line’ que hay incluidos dentro de algunas descripciones del csv, ya que Hive no los puede manejar de forma correcta.
 -	**get_events_data.py**: Descarga del dataset de eventos de Madrid y codificación en utf-8 para poder ser leído correctamente desde Hive.
 -	**get_poi_data.py**: Función con la API de Foursquare para recuperar los lugares (puntos de interés) mejor valorados en cada uno de los barrios de Madrid. A partir del dataset neighbourhood.csv, cargado en la fase de despliegue, tenemos el centroide de cada barrio y será este punto el que se utilizará para buscar los puntos de interés recomendados por Foursquare.
