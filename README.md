@@ -1,48 +1,72 @@
-# Proyecto final – Airbnb Madrid Ocio
-Como parte del proyecto final del Bootcamp Big Data & Machine Learning de KeepCoding, se ha planteado la mejora y desarrollo del módulo de arquitectura almacenamiento e ingesta continuando con el dataset que Airbnb que se ha ido utilizando a lo largo del curso.
-Sin centrarnos en lo que seria la idea de negocio de la aplicación, el objetivo de trabajo se basa en desarrollar una posible solución de arquitectura a través de las tecnologías disponibles en la plataforma Google Cloud Platform. Para ellos en los diferentes aparatados se hará hincapié en:
+# Proyecto final – Airbnb Ocio Madrid
+Como parte del proyecto final del **Bootcamp Big Data & Machine Learning de KeepCoding**, y continuando con el dataset que Airbnb que se ha ido utilizando a lo largo del curso, se plantea el desarrollo y despliegue de una arquitectura para llevar a cabo las fases de ingesta, almacenamiento y visualización de los datos.
+
+Sin centrarnos en lo que sería la idea de negocio de la aplicación, el objetivo de este trabajo se basa en desarrollar una posible solución de arquitectura a través de las tecnologías disponibles en la plataforma **Google Cloud Platform**. Para ellos en los diferentes aparatados se hará hincapié en:
+
 -	Tecnologías utilizadas
 -	Fuentes de datos
 -	Ingesta
 -	Despliegue de la solución
 -	Visualización de resultados
 ## Estrategia
-Desarrollar una herramienta que nos recomiende los alquileres de Airbnb en función de la oferta de ocio de los distintos barrios de Madrid. Al buscar alojamiento es importante estar cerca de ciertas áreas turísticas, pero también es interesante saber la proximidad que se tendrá a ciertos lugares como restaurantes, supermercados, tiendas, así como conocer ciertos eventos locales que se celebrarán en los próximos días.
-Se trata de un sistema que diariamente pueda enviar a los usuarios aquellos alquileres que considerados con una mayor oferta de ocio a partir de la recopilación y análisis de distintas fuentes de datos. Todas las tecnologías y desarrollos se desplegarán en la nube, evitando de esta manera cualquier tipo de gestión y mantenimiento por parte del cliente. 
+Desarrollar una herramienta que nos recomiende los alquileres de Airbnb en función de la oferta de ocio de los distintos barrios de Madrid. De modo que podríamos titularla como **Airbnb Ocio**.
+
+Al buscar alojamiento es importante estar cerca de ciertas áreas turísticas, pero también es interesante saber la proximidad que se tendrá a ciertos lugares como restaurantes, supermercados, tiendas, así como conocer ciertos eventos locales que se celebrarán en los próximos días.
+
+Se trata de un sistema que diariamente recomiende a los usuarios aquellos alquileres considerados con mayor oferta de ocio y lugares de interés en sus alrededores, todo ello a partir de la recopilación y análisis de distintas fuentes de datos.
+
+Todas las tecnologías y desarrollos se desplegarán en la nube, evitando de esta manera cualquier tipo de gestión y mantenimiento por parte del cliente. 
+
 ## Arquitectura
-La arquitectura planteada se basa en disponer de un sistema totalmente gestionado en la nube y con tecnologías que puedan escalar bajo la necesidad de ampliar los recursos por una mayor demanda o para añadir nuevos servicios o análisis de interés para el negocio planteado.
-Algunas preguntas que nos debemos hacer a la hora de abordar la infraestructura son:
-¿Con que frecuencia y dónde se procesarán las recomendaciones?
-¿Dónde se almacenarán?
-¿cómo se podrán visualizar?
-En la arquitectura para esta solución se plantea en dos fases. La primera es al que se ha implementado a modo de PoC (Proof of concept) dónde se ha desplegado y desarrollado todo lo necesario. Por otro lado, la segunda fase, se plantea cómo podría abordarse una evolución o ampliación de los servicios ofrecidos a través de las tecnologías disponibles en la nube.
-A continuación, se muestra un diagrama con el flujo de datos y las tecnologías tu utilizadas:
+La arquitectura planteada se basa en disponer de un sistema totalmente gestionado en la nube y con tecnologías que puedan escalar bajo la necesidad de ampliar los recursos por una mayor demanda o incluso añadir nuevos servicios de interés para el negocio planteado.
+
+Las preguntas planteadas a la hora de abordar la infraestructura son:
+-	¿Con que frecuencia y dónde se procesarán las recomendaciones?
+-	¿Dónde se almacenarán?
+-	¿Cómo se podrán visualizar?
+
+En este proyecto se plantean dos arquitecturas que se realizarían en distintas fases. La primera fase muestra la arquitectura básica para poder desplegar la idea presentada en un inicio. Ésta es la arquitectura que se ha desarrollado y desplegado a modo de prueba de concepto. Por otro lado, la segunda fase, plantea cómo podría abordarse una evolución o ampliación de los servicios ofrecidos a través de las tecnologías disponibles en la nube.
+## Fase I (Prueba de Concepto)
+A continuación, se muestra un diagrama con el flujo de datos y las tecnologías utilizadas para la implementación del proyecto:
+  
 ![](images/arch-f1.png)
+
 Se distinguen los siguientes bloques y tecnologías:
 ### Fuentes de datos
-El sistema recopilará además del dataset de Airbnb, utilizado durante este Bootcamp, otras dos fuentes de datos adicionales.
+El sistema recopilará además del dataset de Airbnb (Madrid), utilizado durante este Bootcamp, otras dos fuentes de datos adicionales.
 #### Airbnb
-Se trata del dataset utilizado a lo largo del Bootcamp. Es una fuente de datos independiente de Airbnb que muestra los alquileres que Airbnb tiene registrados a lo largo del mundo. Estos datos ya han sido analizados, limpiados y agregados para facilitar su consumo.
-En nuestro caso, el dataset utililzado no tiene una actualización continua de la información. Para la practica se ha utilizado éste. Pero se podría plantear utilizar algún enlace donde se la frecuencia de actualización sea mayor.
+Se trata del dataset utilizado a lo largo del Bootcamp. Es una fuente de datos independiente de Airbnb que muestra los alquileres que esta compañía tiene registrados a lo largo del mundo. Estos datos ya han sido analizados, limpiados y agregados para facilitar su consumo.
+El dataset utilizado para la prueba de concepto no tiene una actualización continua de la información, de modo que se podría plantear como mejora el utilizar algún enlace o fuente con una frecuencia de actualización mayor.
+
+Enlace al dataset:  
 https://public.opendatasoft.com/explore/dataset/airbnb-listings/export/?disjunctive.host_verifications&disjunctive.amenities&disjunctive.features&q=madrid
 #### Foursquare
-Se han valorado varios proveedores y webs de datos geolocalizados, pero finalmente se optó por utilizar el proveedor Foursquare (servicio basado en geolocalización para descubrir lugares interesantes en las ciudades)
-Otros servicios o páginas valoradas han sido:
+Se han valorado varios proveedores y webs de datos geolocalizados, pero finalmente se optó por utilizar el proveedor Foursquare (servicio basado en geolocalización para descubrir lugares interesantes en las ciudades).
+
+Algunos servicios o páginas valoradas han sido:
 -	https://www.eltenedor.es/
 -	https://www.tripadvisor.es/
 -	https://www.yelp.es/madrid
-Pero después de ver la dificultad para obtener la información haciendo scraping, ya que cada vez más las webs ofuscan sus páginas para dificultar estas prácticas, se optó por utilizar la API de Foursquare debido a su facilidad de uso, datos bastante precisos y que alimentan otros servicios populares como Apple Maps, Uber, Twitter, etc. además de ser un servicio muy por una gran comunidad de desarrolladores.
-Las opciones gratuitas que nos ofrece Foursquare eran más que suficientes para el desarrollo del proyecto (95000 llamadas a la API por día + 500 consultas premium). De forma que mediante esta API se permite con el plan gratuito:
--	Buscar de puntos específicos de interés alrededor de una posición dada
--	Explorar Punto de interés de tendencia o mejor valorados alrededor de una posición dada. 
+Se probó a scrapear alguna de las webs anteriores, pero debido a su nivel de ofuscación y viendo que cada vez más las webs dificultan su extracción mediante estas prácticas, se optó por utilizar la API de Foursquare.
+
+Se trata de una API muy fácil de usar, con datos bastante precisos y que alimentan otros servicios populares como Uber, Twitter, etc. además de ser un servicio utilizado por una gran comunidad de desarrolladores.
+
+Las opciones gratuitas que nos ofrece Foursquare son más que suficientes para el desarrollo del proyecto (95000 llamadas a la API por día + 500 consultas premium), permitiendo:
+-	Buscar puntos específicos de interés alrededor de una posición dada.
+-	Explorar puntos de interés de tendencia o mejor valorados alrededor de una posición dada.
+
 En este caso la frecuencia de actualización es continua.
-Para hacer uso de este servicio, stambien se ha  utilizado el fichero neighbouhoods.geojson (http://insideairbnb.com/get-the-data.html),  mediante el cual podemos conocer los límites de cada uno de los barrios de Madrid. Este fichero no se actualizará, solamente se utilizará en la fase de despliegue para calcular los centroides de cada barrio, serán luego estos puentos de cada barrio los que se utilizarán par obtener  los lugares de interés recomendados por el servicio Foursquare.
+
+Esta API se ha utilizado junto con el dataset **_neighbouhoods.geojson_** (http://insideairbnb.com/get-the-data.html),  mediante el cual podemos conocer los límites de cada uno de los barrios de Madrid.  
+Este fichero no se actualizará, solamente se utilizará en la fase de despliegue para calcular los centroides de cada barrio, serán luego estos puntos de cada barrio los que se utilizarán para obtener los lugares de interés recomendados por el servicio Foursquare.
 
 #### Agenda de actividades y eventos de Madrid
-Son datos publicados en la web de datos abiertos de Madrid (https://datos.madrid.es/portal/site/egob/)
-Se trata de actividades de distinto tipo que se van a celebrar o que se están celebrando, en centros municipales o asociados la actividad gestionada por el Ayuntamiento. Se pueden encontrar así las actividades de Centros Culturales, Socioculturales, Centros Juveniles, Bibliotecas, Centros de Mayores, Museos, Juntas de Distrito, etc.
-Se dispone de distintos formatos csv, geo, xml, json, … y ssu frecuencia actualización es diaria.
+Son datos publicados en la [web de datos abiertos de Madrid](https://datos.madrid.es/portal/site/egob/). Se trata de distinto tipo de actividades que se están celebrando o se van a celebrar, gestionadas por el Ayuntamiento de Madrid. Se pueden encontrar así las actividades de Centros Culturales, Socioculturales, Centros Juveniles, Bibliotecas, Centros de Mayores, Museos, Juntas de Distrito, etc.
+
+Se dispone de distintos formatos csv, geo, xml, json,… y su frecuencia actualización es diaria.
+
 En el apartado de exploración de datos se detalla más información sobre esta fuente.
+
 Puedes obtener más información de esta fuente en este [enlace](https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=57be24206a91b510VgnVCM2000001f4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default)
 
 ### Ingestión y almacenamiento
