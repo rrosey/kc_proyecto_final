@@ -15,7 +15,7 @@
 ## Introducción
 Como parte del proyecto final del **Bootcamp Big Data & Machine Learning de KeepCoding**, y continuando con el dataset que Airbnb que se ha ido utilizando a lo largo del curso, se plantea el desarrollo y despliegue de una arquitectura para llevar a cabo las fases de ingesta, almacenamiento y visualización de los datos.
 
-Sin centrarnos en lo que sería la idea de negocio de la aplicación, el objetivo de este trabajo se basa en desarrollar una posible solución de arquitectura a través de las tecnologías disponibles en la plataforma **Google Cloud Platform**. Para ellos en los diferentes aparatados se hará hincapié en:
+Sin centrarnos en lo que sería la idea de negocio de la aplicación, el objetivo de este trabajo se basa en desarrollar una posible solución de arquitectura a través de las tecnologías disponibles en la plataforma **Google Cloud Platform**. Para ello en los diferentes aparatados se hará hincapié en:
 
 -	Tecnologías utilizadas
 -	Fuentes de datos
