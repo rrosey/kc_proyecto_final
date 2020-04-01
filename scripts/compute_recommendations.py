@@ -86,7 +86,7 @@ def read_recommendations():
 
 def post_message_to_slack(text, blocks=None):
     slack_token = (
-        "xoxp-982760551664-984970813334-972673509553-0ed398c91e4423ae67630ae482703081"
+        "xxxxx"
     )
     slack_channel = "#ocio"
     slack_icon_url = "https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-large/1f514.png"
