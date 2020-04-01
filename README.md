@@ -13,7 +13,7 @@
 * [Referencias](#referencias)
 
 ## Introducción
-Como parte del proyecto final del **Bootcamp Big Data & Machine Learning de KeepCoding**, y continuando con el dataset que Airbnb que se ha ido utilizando a lo largo del curso, se plantea el desarrollo y despliegue de una arquitectura para llevar a cabo las fases de ingesta, almacenamiento y visualización de los datos.
+Como parte del proyecto final del **Bootcamp Big Data & Machine Learning de KeepCoding**, y continuando con el dataset de Airbnb que se ha ido utilizando a lo largo del curso, se plantea el desarrollo y despliegue de una arquitectura para llevar a cabo las fases de ingesta, almacenamiento y visualización de los datos del proyecto titulado como __*Aribnb Ocio*__.
 
 Sin centrarnos en lo que sería la idea de negocio de la aplicación, el objetivo de este trabajo se basa en desarrollar una posible solución de arquitectura a través de las tecnologías disponibles en la plataforma **Google Cloud Platform**. Para ello en los diferentes aparatados se hará hincapié en:
 
@@ -23,7 +23,7 @@ Sin centrarnos en lo que sería la idea de negocio de la aplicación, el objetiv
 -	Despliegue de la solución
 -	Visualización de resultados
 ## Estrategia
-Desarrollar una herramienta que nos recomiende los alquileres de Airbnb en función de la oferta de ocio de los distintos barrios de Madrid. De modo que podríamos titularla como **Airbnb Ocio**.
+Desarrollar una herramienta (*__Airbnb Ocio*__) que nos recomiende los alquileres de Airbnb en función de la oferta de ocio de los distintos barrios de Madrid.
 
 Al buscar alojamiento es importante estar cerca de ciertas áreas turísticas, pero también es interesante saber la proximidad que se tendrá a ciertos lugares como restaurantes, supermercados, tiendas, así como conocer ciertos eventos locales que se celebrarán en los próximos días.
 
