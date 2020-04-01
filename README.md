@@ -3,13 +3,13 @@
 * [Introducción](#introducci-n)
 * [Estrategia](#estrategia)
 * [Arquitectura](#arquitectura)
-* [Fase I (Prueba de Concepto)](#fase-i--prueba-de-concepto-)
-* [Exploracion de datos](#exploracion-de-datos)
+* [Fase I (Prueba de Concepto)](#fase-i-_prueba-de-concepto_)
+* [Exploración de datos](#exploracion-de-datos)
 * [Flujo de trabajo](#flujo-de-trabajo)
 * [Desarrollo](#desarrollo)
 * [Deployment](#deployment)
 * [Mejoras fase I](#mejoras-fase-I)
-* [Fase II (Evolución)](#fase-ii--evoluci-n-)
+* [Fase II (Evolución)](#fase-ii-_evolucion_)
 * [Referencias](#referencias)
 
 ## Introducción
@@ -109,7 +109,7 @@ Como se puede apreciar en el diagrama, el despliegue del cluster y la ejecución
 En una primera fase, los resultados obtenidos se publicarán a través de la herramienta de colaboración **Slack**. Se trata de una forma simple en la que varios usuarios pueden unirse a un proyecto de Slack y mediante sus clientes móvil o web recibir las recomendaciones generadas por nuestra aplicación.
 
 En otra fase posterior, se podría almacenar cierta información en bases de datos, como las ofrecidas por Google a través de servicios como BigQuery o Cloud SQL. De esta forma usuarios más avanzados pudieran hacer sus propios analisis y consultas a través de herramientas de exploración y análisis de datos como Microsoft Power BI, Tableau o Superset.
-## Exploracion de datos
+## Exploración de datos
 Para la exploración de los datasets se utilizó el notebook [_analisis_datasets.ipynb_]( analisis_datasets.ipynb) que se puede encontrar en este repositorio.
 
 En este notebook se hace un pequeño análisis de los datasets con el objetivo de explorar aquellas columnas que se quieren utilizar para la generación de las recomendaciones.
