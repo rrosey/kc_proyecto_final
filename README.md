@@ -3,13 +3,13 @@
 * [Introducción](#introducci-n)
 * [Estrategia](#estrategia)
 * [Arquitectura](#arquitectura)
-* [Fase I (Prueba de Concepto)](#fase-i-_prueba-de-concepto_)
-* [Exploración de datos](#exploracion-de-datos)
+* [Fase I (Prueba de Concepto)](#fase-i-prueba-de-concepto)
+* [Exploración de datos](#exploración-de-datos)
 * [Flujo de trabajo](#flujo-de-trabajo)
 * [Desarrollo](#desarrollo)
 * [Deployment](#deployment)
 * [Mejoras fase I](#mejoras-fase-I)
-* [Fase II (Evolución)](#fase-ii-_evolucion_)
+* [Fase II (Evolución)](#fase-ii-evolución)
 * [Referencias](#referencias)
 
 ## Introducción
