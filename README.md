@@ -1,4 +1,4 @@
-# Proyecto final – Airbnb Ocio Madrid
+# Proyecto final – _Airbnb Ocio Madrid_
 
 * [Introducción](#introducci-n)
 * [Estrategia](#estrategia)
