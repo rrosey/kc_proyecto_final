@@ -4,7 +4,7 @@
 * [Estrategia](#estrategia)
 * [Arquitectura](#arquitectura)
 * [Fase I (Prueba de Concepto)](#fase-i-_prueba-de-concepto_)
-* [Exploración de datos](#exploraci-n-de-datos)
+* [Exploración de datos](#exploraci_n-de-datos)
 * [Flujo de trabajo](#flujo-de-trabajo)
 * [Desarrollo](#desarrollo)
 * [Deployment](#deployment)
